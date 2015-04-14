@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Save the date - 27.06.2015 </title>
+<meta name="description" content="Gustavo, Nayara, Nayara e Gustavo, Save the date, 27/06/2015,">
+<meta name="author" content="Gustavo Alves">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Icone da página -->
+<link rel="icon" type="image/png" href="images/ico/marriage.png">
+<!--   Google fonts  -->
+<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=BenchNine:700' rel='stylesheet' type='text/css'>
+<!--   main stylesheet  -->
+<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title">
+<link id="colors" rel="stylesheet" href="stylesheets/red.css" type="text/css" media="screen" title="no title">
+<link rel="stylesheet" href="stylesheets/settings.css" type="text/css" media="screen" title="no title">
+
+<script >
+// iOS viewport scaling bug fix
+// https://gist.github.com/901295
+// Rewritten version
+// By @mathias, @cheeaun and @jdalton
+
+(function(doc) {
+
+var addEvent = 'addEventListener',
+    type = 'gesturestart',
+    qsa = 'querySelectorAll',
+    scales = [1, 1],
+    meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+
+function fix() {
+	meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+	doc.removeEventListener(type, fix, true);
+}
+
+if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+	fix();
+	scales = [.25, 1.6];
+	doc[addEvent](type, fix, true);
+}
+
+}(document));
+</script>
+
+<!-- custom modernizr build -->
+<script src="javascript/modernizr.js"></script>
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- GoogleMaps -->
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<!-- GoogleMaps, photo gallery and slider -->
+<script src="javascript/libraries-ck.js"></script>
+<!-- custom js class -->
+<script src="javascript/save_the_date-ck.js"></script>
+
+<!-- SETTINGS STARTS -->
+<script>
+$(document).ready(function() {
+	// init Save the Date
+	save_the_date.init({
+		weddingDate: "2015/06/27, 20:30", 
+		//Date : enter your wedding date
+    labels: ["dias", "horas", "minutos", "segundos"], 
+		//Array of strings : labels of time units
+		});	
+	$(".fancybox").fancybox();
+});
+</script>
+
+<style>
+	div.foto{
+		float: left;
+		width: 20%;
+		padding-top: 0;
+	}
+	h2.galeria{
+		padding: 0px;
+	}
+</style>
+<!-- SETTINGS ENDS -->
+
+<script src="javascript/init-ck.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<!--[if lt IE 9]> <body  id="top" class="ie-fix"><![endif]-->	
+<!--[if (gt IE 8)|!(IE)]><!--> <body  id="top"><!--<![endif]-->
+	
+	<!--- NAVIGATION STARTS -->
+	<div class="nav-container">
+		<div class="nav">
+			<a  id="full-menu" href="#">&equiv;</a>
+			<a class="active to-scroll" href="#top">Início</a>
+			<a class="to-scroll" href="#about">Nós dois</a>
+			<a class="to-scroll" href="#ceremony">Datas</a>
+			<a class="to-scroll" href="#fotos">Fotos</a>
+			<a class="to-scroll" href="#registry">Presentes</a>
+			<!-- <a href="fotos.html" >Fotos</a> -->
+			<a class="to-scroll" href="#rsvp">Contatos</a>
+			<div class="effect"></div>
+		</div>
+	</div>
+	<!--- NAVIGATION ENDS -->
+	
+	<!-- HEADER STARTS -->
+	<header class="header" role="banner">
+				<h1 class="wrapper"><span>Nayara</span> & <span>Gustavo</span></h1>
+				<div class="images"><span class="her pile"></span><span class="him pile"></span></div> 
+				<h2>
+					<span class="event">vamos nos casar...</span>
+					<span class="date">27.06.2015</span>
+					<span id="timer" class="timer"></span>
+				</h2>		
+	</header>	
+	<!-- HEADER ENDS -->
+	
+	<!--- MAIN CONTENT STARTS -->
+	<div class="content">
+	
+			<!-- ABOUT SECTION STARTS -->
+			<section id="about" class="about clearfix">
+				<div class="she">
+					<p>
+						<strong>Nayara do Prado Valadão</strong> sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+						</p>
+				</div>
+				<div class="he">
+					<p>
+						<strong>Gustavo Alves</strong> sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+					</p>
+				</div>
+				<div class="they">
+					<p>
+						<strong>They</strong> sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+					</p>
+					<p>Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+					</p>
+				</div>
+			</section>
+			<!-- ABOUT SECTION ENDS -->
+			
+			
+			<!-- CEREMONY SECTION STARTS -->
+			<section  id="ceremony" class="flex-container ceremony">
+				
+				<div class="flexslider">
+					<ul class="slides">
+						<li style="background-image: url(images/slide0.jpg);"></li>
+						<li style="background-image: url(images/slide1.jpg);"></li>
+						<li class="fixed" style="background-image: url(images/slide2.jpg);"></li>
+					</ul>
+				</div>
+
+				<div  class="wrapper clearfix">
+					
+						<h2 class="title">Datas</h2>
+						<!-- CHA DE PANELA -->
+						<div class="ceremony-1">
+							<h1>30.05.2015</h1>
+							<span class="image pile">
+								<img src="images/reception.jpg" width="300" height="300" alt="Recepção">
+							</span>
+							<h3>Chá de Panela</h3>
+							<p>20:30H</p>
+							<p>Rua Bárbara Heliodora, Bairro Capuava</p>
+							<a class="map" data-lat="-16.656497" data-lng="-49.326243" data-title="Chá de Panela">Mostrar no Google Maps</a>
+							<div class="pile my_map"><div id="map-reception"></div></div>		
+						</div>
+
+						<!-- IGREJA -->
+						<div class="ceremony-2">
+							<h1>27.06.2015</h1>
+							<span class="image pile">
+								<img src="images/church.jpg" width="300" height="300" alt="Igreja">
+							</span>
+							<h3>Cerimônia</h3>
+							<p>20:30H</p>
+							<p>Rua Euclides da Cunha, Bairro São Francisco</p>
+							<a class="map" data-lat="-16.668329" data-lng="-49.328608" data-title="Cerimônia">Mostrar no Google Maps</a>
+							<div class="pile my_map"><div id="map-ceremony"></div></div>		
+						</div>
+
+						<!-- RECEPCAO -->
+<!-- 						<div class="ceremony-2">
+							<span class="image pile">
+								<img src="images/reception.jpg" width="300" height="300" alt="Reception">
+							</span>
+							<h3>Recepção</h3>
+							<p>Logo após a Cerimônia</p>
+							<p>Salão de festas ao lado.</p>
+							<a class="map" data-lat="-16.668329" data-lng="-49.328608" data-title="Recepção" >Mostrar no Google Maps</a>	
+							<div class="pile my_map"><div id="map-reception"></div></div>		
+						</div> -->
+						
+					</div>
+			</section>
+			<!-- CEREMONY SECTION ENDS -->
+			
+			<!--- FOTOS STARTS -->	
+			<section id="fotos" class="fotos">
+				<div class="wrapper">
+					<h2 class="title">Fotos</h2>
+					<h2 class="galeria">
+						<div class="foto">
+							<a class="fancybox" rel="group" href="images/gallery/gallery1.jpg">
+								<img src="images/gallery/gallery1.jpg" alt="Foto 1" />
+							</a>
+						</div>
+						<div class="foto">
+							<a class="fancybox" rel="group" href="images/gallery/gallery4.jpg">
+								<img src="images/gallery/gallery4.jpg" alt="Foto 1" />
+							</a>
+						</div>
+						<div class="foto">
+							<a class="fancybox" rel="group" href="images/gallery/gallery1.jpg">
+								<img src="images/gallery/gallery1.jpg" alt="Foto 1" />
+							</a>
+						</div>
+						<div class="foto">
+							<a class="fancybox" rel="group" href="images/gallery/gallery2.jpg">
+								<img src="images/gallery/gallery2.jpg" alt="Foto 1" />
+							</a>
+						</div>
+						<div class="foto">
+							<a class="fancybox" rel="group" href="images/gallery/gallery1.jpg">
+								<img src="images/gallery/gallery1.jpg" alt="Foto 1" />
+							</a>
+						</div>
+						<div class="foto">
+							<a class="fancybox" rel="group" href="images/gallery/gallery4.jpg">
+								<img src="images/gallery/gallery4.jpg" alt="Foto 1" />
+							</a>
+						</div>
+						<div class="foto">
+							<a class="fancybox" rel="group" href="images/gallery/gallery1.jpg">
+								<img src="images/gallery/gallery1.jpg" alt="Foto 1" />
+							</a>
+						</div>
+						<div class="foto">
+							<a class="fancybox" rel="group" href="images/gallery/gallery2.jpg">
+								<img src="images/gallery/gallery2.jpg" alt="Foto 1" />
+							</a>
+						</div>
+						<div class="foto">
+							<a class="fancybox" rel="group" href="images/gallery/gallery1.jpg">
+								<img src="images/gallery/gallery1.jpg" alt="Foto 1" />
+							</a>
+						</div>
+						<div class="foto">
+							<a class="fancybox" rel="group" href="images/gallery/gallery4.jpg">
+								<img src="images/gallery/gallery4.jpg" alt="Foto 1" />
+							</a>
+						</div>
+						<br style="clear: both"/>
+					</h2>
+				</div>
+			</section>
+			<!--- FOTOS ENDS -->
+
+			<!--- REGISTRY STARTS -->	
+			<section id="registry" class="registry">
+				<div class="wrapper">
+					<h2 class="title">Lista de Presentes</h2>
+					<h3>Algumas ideias de presentes</h3>
+					<p>Sua presença é o suficiente. Maaas, se você estiver tomado de uma extrema generozidade, criamos algumas listinhas para sua comodidade.</p>
+					<ul>
+						<li><a href="http://www.ricardoeletro.com.br/ListaCasamento/ListaPresentes/65545/Nayara-e-Gustavo/" target="_blank"><img src="images/registry/ricardoeletro.jpg" width="200" height="40" alt="Ricardo Eletro"></a></li>
+						<li><a href="#" target="_blank"><img src="images/registry/goianita.jpg" width="228" height="43" alt="Casa Goianita"></a></li>
+						<li><a href="http://www.extra.com.br" target="_blank"><img src="images/registry/extra.jpg" width="228" height="43" alt="Extra"></a></li>
+						<li><a href="#" target="_blank"><img src="images/registry/moreira.png" width="228" height="43" alt="Hiper Moreira"></a></li>
+					</ul>
+
+				</div>
+				<div class="gdrive">
+					<ul>
+					<h3>Já ganhamos</h3>
+					<p>O que está marcado de Verde é porque já ganhamos.</p>
+					<!-- <p>Entre em contato conosco, ficaremos muito feliz de receber um telefonema ou email</p> -->
+					<iframe width="780" height="380" src="https://docs.google.com/spreadsheets/d/1R8faMfll4MhLBBGQ8YPtP_Zm8KzF-rq2qL9cSc5HmW8/pubhtml"></iframe>
+				</ul>
+				</div>
+			</section>
+			<!--- REGISTRY ENDS -->	
+
+			<!--- RSVP STARTS -->
+			<section id="rsvp" class="contact">
+					<h2 class="title">Contatos</h2>
+				<div class="wrapper">
+
+<!-- 					<div id="note">
+						<p>Estamos ansiosos para celebrar com você.</p> 
+						<p>Por favor confirme sua presença até o dia 1 de Junho.</p>
+					</div> -->
+
+					<h3>Nossos contatos</h3>
+					<div class="contact-details contact-details-1">
+						<h4>Nayara</h4>
+						<p><small>whatsapp </small> <small>OI -  62</small> 8422 3973  </p>
+						<p><small>TIM -  62</small> 8222 8133  </p>
+						<p>
+							<a href="https://pt-br.facebook.com/NayaaraV" target="_blank"><img src="images/svg/facebook.svg" width="24" height="24"></a>  &nbsp;&nbsp;
+							<!-- <a href="" target="_blank"><img src="images/svg/twitter.svg" width="24" height="24"></a>   &nbsp;&nbsp; -->
+							<a href="http://instagram.com/nayaarav" target="_blank"><img src="images/svg/instagram.svg" width="24" height="24"></a> &nbsp;&nbsp;
+						</p>
+						<p>
+							<a href="mailto:nayarapradov@gmail.com?subject=RSVP">nayarapradov@gmail.com</a>
+						</p>
+					</div>
+					<div class="contact-details contact-details-2">
+						<h4>Gustavo</h4>
+						<p><small> 62</small> 8139 8221 <small> - TIM</small> <small>whatsapp</small></p>
+						<p><small> 62</small> 8565 8465 <small> - OI</small></p>
+						<p><small> 62</small> 3095 8405 <small> - Fixo</small></p>
+						<p>
+							<a href="https://pt-br.facebook.com/gustavoalves.inf" target="_blank"><img src="images/svg/facebook.svg" width="24" height="24"></a>  &nbsp;&nbsp;
+							<a href="https://twitter.com/gustavoalvesinf" target="_blank"><img src="images/svg/twitter.svg" width="24" height="24"></a>   &nbsp;&nbsp;
+							<a href="http://instagram.com/gustavoalvesinf" target="_blank"><img src="images/svg/instagram.svg" width="24" height="24"></a> &nbsp;&nbsp;
+						</p>
+							<a href="mailto:gustavoalves.inf@gmail.com?subject=RSVP">gustavoalves.inf@gmail.com</a>
+						</p>
+					</div>
+						
+				</div>
+					
+			</section>
+			<!--- RSVP ENDS -->
+			
+			<!-- FOOTER STARTS -->
+			<footer id="footer">	
+				<p class="copyright"> &copy; 2015 <a href="#">Nayara&Gustavo</a> All rights reserved.</p>
+			</footer>
+			<!-- FOOTER ENDS -->
+			
+		</div>	
+		<!--- MAIN CONTENT ENDS -->
+		
+</body>
+</html>

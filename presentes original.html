@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Save the date - 27.06.2015 </title>
+    <meta name="description" content="Gustavo, Nayara, Nayara e Gustavo, Save the date, 27/06/2015,">
+    <meta name="author" content="Gustavo Alves">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icone da página -->
+    <link rel="icon" type="image/png" href="images/ico/marriage.png">
+    <!--   Google fonts  -->
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=BenchNine:700' rel='stylesheet' type='text/css'>
+    <!--   main stylesheet  -->
+    <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title">
+    <link id="colors" rel="stylesheet" href="stylesheets/red.css" type="text/css" media="screen" title="no title">
+    <link rel="stylesheet" href="stylesheets/settings.css" type="text/css" media="screen" title="no title">
+
+    <script>
+        // iOS viewport scaling bug fix
+        // https://gist.github.com/901295
+        // Rewritten version
+        // By @mathias, @cheeaun and @jdalton
+
+        (function(doc) {
+
+            var addEvent = 'addEventListener',
+                type = 'gesturestart',
+                qsa = 'querySelectorAll',
+                scales = [1, 1],
+                meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+
+            function fix() {
+                meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+                doc.removeEventListener(type, fix, true);
+            }
+
+            if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+                fix();
+                scales = [.25, 1.6];
+                doc[addEvent](type, fix, true);
+            }
+
+        }(document));
+    </script>
+
+    <!-- custom modernizr build -->
+    <script src="javascript/modernizr.js"></script>
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- GoogleMaps -->
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <!-- GoogleMaps, photo gallery and slider -->
+    <script src="javascript/libraries-ck.js"></script>
+    <!-- custom js class -->
+    <script src="javascript/save_the_date-ck.js"></script>
+
+    <!-- SETTINGS STARTS -->
+    <script>
+        $(document).ready(function() {
+            // init Save the Date
+            save_the_date.init({
+                weddingDate: "2015/06/27, 20:30",
+                //Date : enter your wedding date
+                labels: ["dias", "horas", "minutos", "segundos"],
+            });
+            $(".fancybox").fancybox();
+        });
+    </script>
+
+    <style>
+        div.foto {
+            float: left;
+            width: 20%;
+            padding-top: 0;
+        }
+        h2.galeria {
+            padding: 0px;
+        }
+    </style>
+    <!-- SETTINGS ENDS -->
+
+    <script src="javascript/init-ck.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<!--[if lt IE 9]> <body  id="top" class="ie-fix"><![endif]-->
+<!--[if (gt IE 8)|!(IE)]><!-->
+
+<body id="top">
+    <!--<![endif]-->
+
+    <!--- NAVIGATION STARTS -->
+    <div class="nav-container">
+        <div class="nav">
+            <a id="full-menu" href="#">&equiv;</a>
+            <a class="active to-scroll" href="#top">Início</a>
+            <a class="to-scroll" href="#about">Nós dois</a>
+            <a class="to-scroll" href="#ceremony">Datas</a>
+            <a class="to-scroll" href="#fotos">Fotos</a>
+            <a class="to-scroll" href="#registry">Presentes</a>
+            <!-- <a href="fotos.html" >Fotos</a> -->
+            <a class="to-scroll" href="#rsvp">Contatos</a>
+            <div class="effect"></div>
+        </div>
+    </div>
+    <!--- NAVIGATION ENDS -->
+	<!-- INICIO DA TABELONA -->
+
+	<div class="content" align="center">
+		<table border="2" cellspacing="2" cellpadding="3" bgcolor="#FFFFFF">
+			<caption>TITULO DE TUDO</caption>
+			<thead>
+				<tr><th colspan="10"><a href="http://imasters.com.br/front-end/css/como-sobrepor-imagens-com-div-e-css/">LEIA ESSE LINK</a></th></tr>
+			</thead>
+            <tfoot>
+                <tr><th colspan="10">RODAPE</th></tr>
+            </tfoot>
+			<tbody>
+				<tr>
+					<th>Imagem</th>
+					<th>Amigo</th>
+					<th>Marca/Modelo</th>
+					<th>Descrição</th>
+                    <th>Lojas/R$</th>
+                    <th>Lojas/R$</th>
+                    <th>Lojas/R$</th>
+                    <th>Lojas/R$</th>
+                    <th>Lojas/R$</th>
+                    <th>Lojas/R$</th>
+				</tr>
+				<tr>
+					<th>
+                        <img src="http://www.philipsconsumerlifestyle.com/batedeira_viva_7920/caracteristicas/page1/frente-batedeira-electrolux.png"  width="128" height="128" >
+                    </th>
+					<th>
+                        Você?
+                    </th>
+					<th>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </th>
+					<th><small>
+                        Nao tem como morar numa casa sem fazer um bolinho, um pao de queijo, um pudim...
+                        Que tal me dar essa batedeira fera pra eu poder fazer todas essas gordisses? *-*
+                    </small></th>
+                    <th>
+                        <a href="http://www.ricardoeletro.com.br/" target="_blank"> 
+                        <img src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/012013/ricardo_eletro.png"  width="64" height="64" > 
+                        <br>R$1,99</a>
+                    </th>
+                    <th>
+                        <a href="http://www.ricardoeletro.com.br/" target="_blank"> 
+                        <img src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/012013/ricardo_eletro.png"  width="64" height="64" > 
+                        <br>R$1,99</a>
+                    </th>
+                    <th>
+                        <a href="http://www.ricardoeletro.com.br/" target="_blank"> 
+                        <img src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/012013/ricardo_eletro.png"  width="64" height="64" > 
+                        <br>R$1,99</a>
+                    </th>
+                    <th>
+                        <a href="http://www.ricardoeletro.com.br/" target="_blank"> 
+                        <img src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/012013/ricardo_eletro.png"  width="64" height="64" > 
+                        <br>R$1,99</a>
+                    </th>
+                    <th>
+                        <a href="http://www.ricardoeletro.com.br/" target="_blank"> 
+                        <img src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/012013/ricardo_eletro.png"  width="64" height="64" > 
+                        <br>R$1,99</a>
+                    </th>
+                    <th>
+                        <a href="http://www.ricardoeletro.com.br/" target="_blank"> 
+                        <img src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/012013/ricardo_eletro.png"  width="64" height="64" > 
+                        <br>R$1,99</a>
+                    </th>
+				</tr>
+                <tr bgcolor="#b6d7a8">
+                    <th>
+                        <img src="http://3.bp.blogspot.com/-McAWxFL6Trs/UVGz-QuoK-I/AAAAAAAAAIc/pDuyCLvBvos/s1600/Faqueiro-Inox-130-pecas-Savoy.png" width="128" height="128">
+                    </th>
+                    <th>
+                        Jãozinho da Padaria
+                    </th>
+                    <th>
+                        Faqueiro TABAJARA seilá das quantas
+                    </th>
+                    <th><small>
+                        Aquele super faqueiro tabajara, pra voce que quer me visitar e comer com uns talheres legalzinhos. sem se preocupar se a faca vai cortar aquele bifão ou se a colher vai entortar quando pegar aquele doce de leite...
+                    </small></th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </th>
+                    <th><small>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </small></th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </th>
+                    <th><small>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </small></th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </th>
+                    <th><small>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </small></th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </th>
+                    <th><small>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </small></th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </th>
+                    <th><small>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </small></th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                    <th>
+                        <a href="#" target="_blank"> 
+                        <img src=""  width="64" height="64" > 
+                        <br>R$000,00</a>
+                    </th>
+                </tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!-- FINAL DA TABELONA -->
+            <!--- RSVP STARTS -->
+            <section id="rsvp" class="contact">
+                    <h2 class="title">Contatos</h2>
+                <div class="wrapper">
+
+<!--                    <div id="note">
+                        <p>Estamos ansiosos para celebrar com você.</p> 
+                        <p>Por favor confirme sua presença até o dia 1 de Junho.</p>
+                    </div> -->
+
+                    <h3>Nossos contatos</h3>
+                    <div class="contact-details contact-details-1">
+                        <h4>Nayara</h4>
+                        <p><small>whatsapp </small> <small>OI -  62</small> 8422 3973  </p>
+                        <p><small>TIM -  62</small> 8222 8133  </p>
+                        <p>
+                            <a href="https://pt-br.facebook.com/NayaaraV" target="_blank"><img src="images/svg/facebook.svg" width="24" height="24"></a>  &nbsp;&nbsp;
+                            <!-- <a href="" target="_blank"><img src="images/svg/twitter.svg" width="24" height="24"></a>   &nbsp;&nbsp; -->
+                            <a href="http://instagram.com/nayaarav" target="_blank"><img src="images/svg/instagram.svg" width="24" height="24"></a> &nbsp;&nbsp;
+                        </p>
+                        <p>
+                            <a href="mailto:nayarapradov@gmail.com?subject=RSVP">nayarapradov@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="contact-details contact-details-2">
+                        <h4>Gustavo</h4>
+                        <p><small> 62</small> 8139 8221 <small> - TIM</small> <small>whatsapp</small></p>
+                        <p><small> 62</small> 8565 8465 <small> - OI</small></p>
+                        <p><small> 62</small> 3095 8405 <small> - Fixo</small></p>
+                        <p>
+                            <a href="https://pt-br.facebook.com/gustavoalves.inf" target="_blank"><img src="images/svg/facebook.svg" width="24" height="24"></a>  &nbsp;&nbsp;
+                            <a href="https://twitter.com/gustavoalvesinf" target="_blank"><img src="images/svg/twitter.svg" width="24" height="24"></a>   &nbsp;&nbsp;
+                            <a href="http://instagram.com/gustavoalvesinf" target="_blank"><img src="images/svg/instagram.svg" width="24" height="24"></a> &nbsp;&nbsp;
+                        </p>
+                            <a href="mailto:gustavoalves.inf@gmail.com?subject=RSVP">gustavoalves.inf@gmail.com</a>
+                        </p>
+                    </div>
+                        
+                </div>
+                    
+            </section>
+            <!--- RSVP ENDS -->
+
+    <!-- FOOTER STARTS -->
+    <footer id="footer">
+        <p class="copyright"> &copy; 2015 <a href="#">Nayara&Gustavo</a> All rights reserved.</p>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+    </div>
+    <!--- MAIN CONTENT ENDS -->
+
+</body>
+
+</html>
