@@ -20,10 +20,6 @@
     <link rel="stylesheet" href="stylesheets/settings.css" type="text/css" media="screen" title="no title">
 
     <script>
-        // iOS viewport scaling bug fix
-        // https://gist.github.com/901295
-        // Rewritten version
-        // By @mathias, @cheeaun and @jdalton
 
         (function(doc) {
 
@@ -59,17 +55,6 @@
     <script src="javascript/save_the_date-ck.js"></script>
 
     <!-- SETTINGS STARTS -->
-    <script>
-        $(document).ready(function() {
-            // init Save the Date
-            save_the_date.init({
-                weddingDate: "2015/06/27, 20:30",
-                //Date : enter your wedding date
-                labels: ["dias", "horas", "minutos", "segundos"],
-            });
-            $(".fancybox").fancybox();
-        });
-    </script>
 
     <style>
         div.foto {
@@ -106,7 +91,7 @@
 	<!-- INICIO DA TABELONA -->
 
 	<div class="content" align="center" id="nossaLista">
-		<table border="2" cellspacing="2" cellpadding="3" bgcolor="#FFFFFF">
+		<table border="2" cellspacing="2" cellpadding="3" bgcolor="#FFFFFF" >
 			<caption>TITULO DE TUDO</caption>
 			<thead>
 				<tr><th colspan="10"><a href="http://imasters.com.br/front-end/css/como-sobrepor-imagens-com-div-e-css/">LEIA ESSE LINK</a></th></tr>
@@ -116,44 +101,111 @@
             </tfoot>
 			<tbody>
 				<tr>
-					<th>Imagem</th>
-					<th>Amigo</th>
-					<th>Marca/Modelo</th>
-					<th>Descrição</th>
-                    <th>Loja</th>
-                    <th>Loja</th>
-                    <th>Loja</th>
+					<th width="10%">Imagem</th>
+					<th width="10%">Amigo</th>
+					<th width="20%">Marca/Modelo</th>
+					<th width="30%">Descrição</th>
+                    <th width="10%" >Onde encontrar</th>
 				</tr>
+                <!-- Geladeira -->
+                <tr>
+                    <th>
+                        <img src="images/list/geladeira.png" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        <strong>Refrigerador Electrolux Duplex</strong>
+                        <br>462 L, Puxadores Externos, 220V Branca - <small>DC49A</small>
+                    </th>
+                    <th><small>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </small></th>
+                    <th>
+                        <a href="http://www.buscape.com.br/refrigerador-electrolux-dc49a-462-litros-branco.html" target="_blank">
+                            <img src="images/list/buscape.png">
+                        </a>
+                        <a href="http://www.novomundo.com.br/produto/15776/geladeira-refrigerador-electrolux-duplex-462-l-puxadores-externos-220v-branca-dc49a" target="_blank">
+                            <img src="images/list/novomundo.png">
+                        </a>
+                    </th>
+                </tr>
+                <!-- ARMÁRIO -->
 				<tr>
 					<th>
-                        <img src="http://www.philipsconsumerlifestyle.com/batedeira_viva_7920/caracteristicas/page1/frente-batedeira-electrolux.png"  width="128" height="128" >
+                        <img src="http://www.novomundo.com.br/fotos/26219_0_1000x1000.jpg"  width="128" height="128" >
                     </th>
 					<th>
                         Você?
                     </th>
 					<th>
-                        Batedeira 500W Britania Turbo Prime 220V
+                        Cozinha de Aço Colormaq Class Master 3 Peças Branco
                     </th>
 					<th><small>
-                        Nao tem como morar numa casa sem fazer um bolinho, um pao de queijo, um pudim...
-                        Que tal me dar essa batedeira fera pra eu poder fazer todas essas gordisses? *-*
                     </small></th>
                     <th>
-                        <a href="http://www.ricardoeletro.com.br/" target="_blank"> 
-                        <img src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/012013/ricardo_eletro.png"  width="64" height="64" > 
-                        <br>R$1,99</a>
-                    </th>
-                    <th>
-                        <a href="http://www.ricardoeletro.com.br/" target="_blank"> 
-                        <img src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/012013/ricardo_eletro.png"  width="64" height="64" > 
-                        <br>R$1,99</a>
-                    </th>
-                    <th>
-                        <a href="http://www.ricardoeletro.com.br/" target="_blank"> 
-                        <img src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/012013/ricardo_eletro.png"  width="64" height="64" > 
-                        <br>R$1,99</a>
+                        <a href="http://www.novomundo.com.br/produto/15940/cozinha-de-aco-colormaq-class-master-3-pecas-branco" target="_blank"> 
+                        <img src="images/list/novomundo.png"> 
                     </th>
 				</tr>
+                <!-- Balcao -->
+                <tr>
+                    <th>
+                        <img src="http://www.novomundo.com.br/fotos/26223_0_1000x1000.jpg"  width="128" height="128" >
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Gabinete de Aço Colormaq Class Master BT2P4G com Tampa 2 Portas 4 Gavetas Branco
+                    </th>
+                    <th><small>
+                    </small></th>
+                    <th>
+                        <a href="http://www.novomundo.com.br/produto/15944/gabinete-de-aco-colormaq-class-master-bt2p4g-com-tampa-2-portas-4-gavetas-branco" target="_blank"> 
+                        <img src="images/list/novomundo.png"> 
+                    </th>
+                </tr>
+                <!-- Microondas -->
+                <tr>
+                    <th>
+                        <img src="http://thumbs.buscape.com.br/microondas/electrolux-ponto-certo-mep41-branco/__300x300-PU827d3_1.jpg"  width="128" height="128" >
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Micro-ondas Electrolux 31 Litros Branco 220V - MEP41
+                    </th>
+                    <th><small>
+                    </small></th>
+                    <th>
+                        <a href="http://www.buscape.com.br/electrolux-ponto-certo-mep41-branco.html" target="_blank"> 
+                        <img src="images/list/buscape.png"> 
+                    </th>
+                </tr>
+                <!-- Forno -->
+                <tr>
+                    <th>
+                        <img src="http://www.novomundo.com.br/fotos/20053_0_1000x1000.jpg"  width="128" height="128" >
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Forno de Mesa Elétrico Layr 46 Litros Branco 220V - Joy
+                    </th>
+                    <th><small>
+                    </small></th>
+                    <th>
+                        <a href="http://www.novomundo.com.br/produto/11256/forno-de-mesa-eletrico-layr-46-litros-branco-220v-joy" target="_blank"> 
+                        <img src="images/list/novomundo.png"> 
+                    </th>
+                </tr>
+
+
+                <!-- EXEMPLO DE FAQUEIRO -->
                 <tr bgcolor="#b6d7a8">
                     <th>
                         <img src="http://3.bp.blogspot.com/-McAWxFL6Trs/UVGz-QuoK-I/AAAAAAAAAIc/pDuyCLvBvos/s1600/Faqueiro-Inox-130-pecas-Savoy.png" width="128" height="128">
@@ -169,17 +221,25 @@
                     </small></th>
                     <th>
                         <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
+                        <img src="images/list/buscape.png"> 
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="" width="128" height="128">
                     </th>
                     <th>
-                        <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
+                        Você?
                     </th>
                     <th>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </th>
+                    <th><small>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </small></th>
+                    <th>
                         <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
+                        <img src="images/list/buscape.png"> 
                         <br>R$000,00</a>
                     </th>
                 </tr>
@@ -198,17 +258,25 @@
                     </small></th>
                     <th>
                         <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
+                        <img src="images/list/buscape.png"> 
                         <br>R$000,00</a>
                     </th>
+                <tr>
                     <th>
-                        <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
+                        <img src="" width="128" height="128">
                     </th>
                     <th>
+                        Você?
+                    </th>
+                    <th>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </th>
+                    <th><small>
+                        Batedeira 500W Britania Turbo Prime 220V
+                    </small></th>
+                    <th>
                         <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
+                        <img src="images/list/buscape.png"> 
                         <br>R$000,00</a>
                     </th>
                 </tr>
@@ -227,106 +295,10 @@
                     </small></th>
                     <th>
                         <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
+                        <img src="images/list/buscape.png"> 
                         <br>R$000,00</a>
                     </th>
-                    <th>
-                        <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
-                    </th>
-                    <th>
-                        <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="" width="128" height="128">
-                    </th>
-                    <th>
-                        Você?
-                    </th>
-                    <th>
-                        Batedeira 500W Britania Turbo Prime 220V
-                    </th>
-                    <th><small>
-                        Batedeira 500W Britania Turbo Prime 220V
-                    </small></th>
-                    <th>
-                        <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
-                    </th>
-                    <th>
-                        <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
-                    </th>
-                    <th>
-                        <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="" width="128" height="128">
-                    </th>
-                    <th>
-                        Você?
-                    </th>
-                    <th>
-                        Batedeira 500W Britania Turbo Prime 220V
-                    </th>
-                    <th><small>
-                        Batedeira 500W Britania Turbo Prime 220V
-                    </small></th>
-                    <th>
-                        <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
-                    </th>
-                    <th>
-                        <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
-                    </th>
-                    <th>
-                        <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <img src="" width="128" height="128">
-                    </th>
-                    <th>
-                        Você?
-                    </th>
-                    <th>
-                        Batedeira 500W Britania Turbo Prime 220V
-                    </th>
-                    <th><small>
-                        Batedeira 500W Britania Turbo Prime 220V
-                    </small></th>
-                    <th>
-                        <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
-                    </th>
-                    <th>
-                        <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
-                    </th>
-                    <th>
-                        <a href="#" target="_blank"> 
-                        <img src=""  width="64" height="64" > 
-                        <br>R$000,00</a>
-                    </th>
+
 			</tbody>
 		</table>
 	</div>
