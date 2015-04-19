@@ -57,6 +57,12 @@
     <!-- SETTINGS STARTS -->
 
     <style>
+        tr.ganhei {
+            background: #b6d7a8;
+        } 
+        tr.parcial {
+            background: #fff2cc;
+        } 
         div.foto {
             float: left;
             width: 20%;
@@ -81,7 +87,8 @@
     <div class="nav-container">
         <div class="nav">
             <a id="full-menu" href="#">&equiv;</a>
-            <a href="index.html">Início</a>
+            <a class="to-scroll" href="index.html">Voltar</a>
+            <a class="to-scroll" href="#">Inicio</a>
             <a class="active to-scroll" href="#nossaLista">Nossa lista</a>
             <a class="to-scroll" href="#rsvp">Contatos</a>
             <div class="effect"></div>
@@ -92,23 +99,31 @@
 
 	<div class="content" align="center" id="nossaLista">
 		<table border="2" cellspacing="2" cellpadding="3" bgcolor="#FFFFFF" >
-			<caption>TITULO DE TUDO</caption>
+			<caption><h3>Lista de presentes Nayara e Gustavo</h3></caption>
 			<thead>
-				<tr><th colspan="10"><a href="http://imasters.com.br/front-end/css/como-sobrepor-imagens-com-div-e-css/">LEIA ESSE LINK</a></th></tr>
+				<tr class=""><th colspan="10">
+                    Quer nos presentear? Entre em contato e diga o que tem interesse... </br>
+                    Quer nos dar algo mas não tem dinheiro suficiente? Nos dê parte do presente, não tem problema! :)</br>
+                    Tem interesse, mas não quer comprar agora? Entre em contato e reserve alguma coisa...  </br>
+                    O que está com fundo Verde é porque já ganhamos, o que está Amarelo é porque ganhamos parte e o que está Branco é porque não ganhamos ainda.  </br>
+                    Não se prenda à lista, fique avontade para nos dar qualquer outra coisa. Nos diga que adicionamos na lista. </br>
+                    Entre em contato, lá em baixo tem nossos telefones, emails, redes sociais.
+                    Nos vemos por aí. ;)
+                </th></tr>
 			</thead>
             <tfoot>
-                <tr><th colspan="10">RODAPE</th></tr>
+                <tr class=""><th colspan="10"><a href="#">Topo da página</a></th></tr>
             </tfoot>
 			<tbody>
-				<tr>
+				<tr class="">
 					<th width="10%">Imagem</th>
 					<th width="10%">Amigo</th>
 					<th width="20%">Marca/Modelo</th>
-					<th width="30%">Descrição</th>
+					<th width="20%">Mensagem</th>
                     <th width="10%" >Onde encontrar</th>
 				</tr>
                 <!-- Geladeira -->
-                <tr>
+                <tr class="">
                     <th>
                         <img src="images/list/geladeira.png" width="128" height="128">
                     </th>
@@ -116,11 +131,10 @@
                         Você?
                     </th>
                     <th>
-                        <strong>Refrigerador Electrolux Duplex</strong>
-                        <br>462 L, Puxadores Externos, 220V Branca - <small>DC49A</small>
+                        Refrigerador Electrolux Duplex 462 L, Puxadores Externos, 220V Branca - DC49A
                     </th>
                     <th><small>
-                        Batedeira 500W Britania Turbo Prime 220V
+                        Deixe sua mensagem aqui
                     </small></th>
                     <th>
                         <a href="http://www.buscape.com.br/refrigerador-electrolux-dc49a-462-litros-branco.html" target="_blank">
@@ -131,8 +145,29 @@
                         </a>
                     </th>
                 </tr>
+                
+                <!-- Ganhei -->
+                <tr class="ganhei">
+                    <th>
+                        <img src="http://www.continental.com.br/common/img/produtos/prod109_busca.png" width="128" height="128">
+                    </th>
+                    <th>
+                        Silvone e Elismar
+                    </th>
+                    <th>
+                        Continental Essenza Spazio FGCT006PSPDA0BR Piso 6 Bocas Branco
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui                                
+                    </small></th>
+                    <th>
+                        <a href="http://www.buscape.com.br/prod_unico?idu=351637&ordem=prec#precos" target="_blank"> 
+                        <img src="images/list/buscape.png"></a>
+                    </th>
+                </tr>
+
                 <!-- ARMÁRIO -->
-				<tr>
+				<tr class="">
 					<th>
                         <img src="http://www.novomundo.com.br/fotos/26219_0_1000x1000.jpg"  width="128" height="128" >
                     </th>
@@ -143,6 +178,7 @@
                         Cozinha de Aço Colormaq Class Master 3 Peças Branco
                     </th>
 					<th><small>
+                        Deixe sua mensagem aqui
                     </small></th>
                     <th>
                         <a href="http://www.novomundo.com.br/produto/15940/cozinha-de-aco-colormaq-class-master-3-pecas-branco" target="_blank"> 
@@ -150,7 +186,7 @@
                     </th>
 				</tr>
                 <!-- Balcao -->
-                <tr>
+                <tr class="">
                     <th>
                         <img src="http://www.novomundo.com.br/fotos/26223_0_1000x1000.jpg"  width="128" height="128" >
                     </th>
@@ -161,6 +197,7 @@
                         Gabinete de Aço Colormaq Class Master BT2P4G com Tampa 2 Portas 4 Gavetas Branco
                     </th>
                     <th><small>
+                        Deixe sua mensagem aqui
                     </small></th>
                     <th>
                         <a href="http://www.novomundo.com.br/produto/15944/gabinete-de-aco-colormaq-class-master-bt2p4g-com-tampa-2-portas-4-gavetas-branco" target="_blank"> 
@@ -168,7 +205,7 @@
                     </th>
                 </tr>
                 <!-- Microondas -->
-                <tr>
+                <tr class="">
                     <th>
                         <img src="http://thumbs.buscape.com.br/microondas/electrolux-ponto-certo-mep41-branco/__300x300-PU827d3_1.jpg"  width="128" height="128" >
                     </th>
@@ -179,6 +216,7 @@
                         Micro-ondas Electrolux 31 Litros Branco 220V - MEP41
                     </th>
                     <th><small>
+                        Deixe sua mensagem aqui
                     </small></th>
                     <th>
                         <a href="http://www.buscape.com.br/electrolux-ponto-certo-mep41-branco.html" target="_blank"> 
@@ -186,7 +224,7 @@
                     </th>
                 </tr>
                 <!-- Forno -->
-                <tr>
+                <tr class="">
                     <th>
                         <img src="http://www.novomundo.com.br/fotos/20053_0_1000x1000.jpg"  width="128" height="128" >
                     </th>
@@ -197,6 +235,7 @@
                         Forno de Mesa Elétrico Layr 46 Litros Branco 220V - Joy
                     </th>
                     <th><small>
+                        Deixe sua mensagem aqui
                     </small></th>
                     <th>
                         <a href="http://www.novomundo.com.br/produto/11256/forno-de-mesa-eletrico-layr-46-litros-branco-220v-joy" target="_blank"> 
@@ -205,82 +244,346 @@
                 </tr>
 
 
-                <!-- EXEMPLO DE FAQUEIRO -->
+                <tr class="">
+                    <th>
+                        <img src="http://static.wmobjects.com.br/hotsite/sku-content/tramontina/61721/images/61721-jogo-panelas-solar-aco-inox-product-image01.png" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Tramontina Solar Inox 6
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="http://www.buscape.com.br/tramontina-solar-inox-6.html#precos" target="_blank"> 
+                        <img src="images/list/buscape.png"></a>
+                    </th>
+                </tr>
+
+                <tr class="">
+                    <th>
+                        <img src="http://iacom.s8.com.br/produtos/01/00/item/111042/3/111042393_1GG.png" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?       
+                    </th>
+                    <th>
+                        Conjunto de Panelas Tramontina Versalhes Antiaderente 5 Peças
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="http://www.americanas.com.br/produto/111042393/conjunto-de-panelas-tramontina-versalhes-antiaderente-5-pecas" target="_blank"> 
+                        <img src="https://logodownload.org/wp-content/uploads/2014/05/logo-Americanas.com_.png"> </a>
+                    </th>
+                </tr>
+                
+                <!-- MODELO -->
+                <tr class="">
+                    <th>
+                        <img src="http://thumbs.buscape.com.br/multiprocessador-de-alimentos/philips-walita-ri7761/__300x300-PU65f2d_2.jpg" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Philips Walita RI7761
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="http://www.buscape.com.br/philips-walita-ri7761.html#precos" target="_blank"> 
+                        <img src="images/list/buscape.png"></a>
+                    </th>
+                </tr>
+                
+                <!-- MODELO -->
+                <tr class="">
+                    <th>
+                        <img src="http://tentacaodosabor.com.br/blog//wp-content/uploads/2014/05/batedeira-planetaria-deluxe-arno-8-velocidades.jpg" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Batedeira Arno Planetária Deluxe SX82 Preto 4 Litros 8 Velocidades - 220V
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="http://www.americanas.com.br/produto/111555711/batedeira-arno-planetaria-deluxe-sx82-preto-4-litros-8-velocidades" target="_blank"> 
+                        <img src="https://logodownload.org/wp-content/uploads/2014/05/logo-Americanas.com_.png"></a>
+                    </th>
+                </tr>
+                
+                <!-- ganhei  -->
                 <tr bgcolor="#b6d7a8">
                     <th>
-                        <img src="http://3.bp.blogspot.com/-McAWxFL6Trs/UVGz-QuoK-I/AAAAAAAAAIc/pDuyCLvBvos/s1600/Faqueiro-Inox-130-pecas-Savoy.png" width="128" height="128">
+                        <img src="http://pepperweb.com.br/newsletter/wp-content/uploads/2013/05/grill.png" width="128" height="128">
                     </th>
                     <th>
-                        Jãozinho da Padaria
+                        Lizandra e Cássio
                     </th>
                     <th>
-                        Faqueiro TABAJARA seilá das quantas
+                        Smart Grill Mondial
                     </th>
                     <th><small>
-                        Aquele super faqueiro tabajara, pra voce que quer me visitar e comer com uns talheres legalzinhos. sem se preocupar se a faca vai cortar aquele bifão ou se a colher vai entortar quando pegar aquele doce de leite...
+                        Deixe sua mensagem aqui
                     </small></th>
                     <th>
-                        <a href="#" target="_blank"> 
-                        <img src="images/list/buscape.png"> 
+                        <img src="http://i.imgur.com/u9Luxdo.png">
                     </th>
                 </tr>
-                <tr>
+
+                <tr class="">
                     <th>
-                        <img src="" width="128" height="128">
+                        <img src="http://isuba.s8.com.br/produtos/01/00/item/120296/0/120296061_1GG.png" width="128" height="128">
                     </th>
                     <th>
-                        Você?
+                        Você? 
                     </th>
                     <th>
-                        Batedeira 500W Britania Turbo Prime 220V
+                        Philco Air Fry Saúde
                     </th>
                     <th><small>
-                        Batedeira 500W Britania Turbo Prime 220V
+                        Deixe sua mensagem aqui
                     </small></th>
                     <th>
-                        <a href="#" target="_blank"> 
-                        <img src="images/list/buscape.png"> 
-                        <br>R$000,00</a>
+                        <a href="http://www.buscape.com.br/philco-air-fry-saude.html#precos" target="_blank"> 
+                        <img src="images/list/buscape.png"> </a>
                     </th>
                 </tr>
-                <tr>
+
+                <tr class="">
                     <th>
-                        <img src="" width="128" height="128">
+                        <img src="http://www.philipsconsumerlifestyle.com/panela_de_pressao_ri3103/caracteristicas/page1/panela-de-pressao.png" width="128" height="128">
                     </th>
                     <th>
-                        Você?
+                        Você?       
                     </th>
                     <th>
-                        Batedeira 500W Britania Turbo Prime 220V
-                    </th>
-                    <th><small>
-                        Batedeira 500W Britania Turbo Prime 220V
-                    </small></th>
-                    <th>
-                        <a href="#" target="_blank"> 
-                        <img src="images/list/buscape.png"> 
-                        <br>R$000,00</a>
-                    </th>
-                <tr>
-                    <th>
-                        <img src="" width="128" height="128">
-                    </th>
-                    <th>
-                        Você?
-                    </th>
-                    <th>
-                        Batedeira 500W Britania Turbo Prime 220V
+                        Philips Walita Daily RI3103/75 Pressão
                     </th>
                     <th><small>
-                        Batedeira 500W Britania Turbo Prime 220V
+                        Deixe sua mensagem aqui
                     </small></th>
                     <th>
-                        <a href="#" target="_blank"> 
-                        <img src="images/list/buscape.png"> 
-                        <br>R$000,00</a>
+                        <a href="http://www.buscape.com.br/philips-walita-daily-ri3103-75-pressao.html#precos" target="_blank"> 
+                        <img src="images/list/buscape.png"> </a>
                     </th>
                 </tr>
-                <tr>
+
+                <tr class="">
+                    <th>
+                        <img src="http://static.wmobjects.com.br/hotsite/sku-content/mondial/109182/images/109182-panela-eletrica-de-arroz-product-image01.png" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?       
+                    </th>
+                    <th>
+                        Mondial PE 04 Arroz
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="http://www.buscape.com.br/mondial-pe-04-arroz.html#precos" target="_blank"> 
+                        <img src="images/list/buscape.png"></a>
+                    </th>
+                </tr>
+                
+                <!-- Mesa -->
+                <tr class="parcial">
+                    <th>
+                        <img src="images/list/mesa.jpg">
+                    </th>
+                    <th>
+                        Dhiego<br>deu 60% da mesa
+                        <br><small>quer dar o resto?</small>
+                    </th>
+                    <th>
+                        Mesa redonda de vidro com 4 cadeiras
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="https://www.google.com.br/maps/place/16%C2%B039'37.6%22S+49%C2%B017'32.6%22W/@-16.660459,-49.292389,18z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0?hl=pt-BR" target="_blank"> 
+                        <img src="images/list/mutirao.png"></a>
+                    </th>
+                </tr>
+
+                <tr class="">
+                    <th>
+                        <img src="http://iseeconnect.com.br/clientes/tramontina/faqueiro_laguna/images/product-image02.png" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Faqueiro Tramontina Inox Laguna 66906890 91
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="http://www.buscape.com.br/tramontina-inox-laguna-66906890-91.html#precos" target="_blank"> 
+                        <img src="images/list/buscape.png"> </a>
+                    </th>
+                </tr>
+
+                <!--  -->
+                <tr class="">
+                    <th>
+                        <img src="http://thumbs.buscape.com.br/faqueiro/tramontina-inox-malibu-23799037-91-pecas_300x300-PU5ed03_1.jpg" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Faqueiro Tramontina Inox Malibu 23799037 91 Peças
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="http://www.buscape.com.br/tramontina-inox-malibu-23799037-91-pecas.html#precos" target="_blank"> 
+                        <img src="images/list/buscape.png">
+                    </th>
+                </tr>
+
+                <!-- SOFA --> 
+                <tr class="">
+                    <th>
+                        <img src="images/list/sofa.jpg">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Sofá de canto <br>
+                        <small></small>
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="https://www.google.com.br/maps/place/Do+Lar+M%C3%B3veis/@-16.673855,-49.254104,15z/data=!4m2!3m1!1s0x0:0xd10e72f51b8ea5cd?sa=X&ei=RlYzVdiPLsHbgwSO7oOwAw&ved=0CHIQ_BIwCw" target="_blank"> 
+                        <img src="http://img2.wikia.nocookie.net/__cb20150309221525/logopedia/images/e/e1/Googlemapslogo2014.png"></a>
+                    </th>
+                </tr> 
+
+                <!-- rack --> 
+                <tr class="parcial">
+                    <th>
+                        <img src="http://iacom.s8.com.br/produtos/01/00/item/122059/2/122059262_1GG.jpg" width="128" height="128">
+                    </th>
+                    <th>
+                        Elismar e Getulio deram 60%
+                        <br><small>quer dar o resto?</small>
+                    </th>
+                    <th>
+                        Painel Bancada para TV até 55 Polegadas Luna III Avelã - Móveis Bechara
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="http://www.americanas.com.br/produto/122059262/painel-bancada-para-tv-ate-55-polegadas-luna-iii-avela-moveis-bechara" target="_blank"> 
+                        <img src="https://logodownload.org/wp-content/uploads/2014/05/logo-Americanas.com_.png"></a>
+                    </th>
+                </tr> 
+
+                <!--  --> 
+                <tr class="">
+                    <th>
+                        <img src="http://d243u7pon29hni.cloudfront.net/images/products/lcd-led-42-panasonic-tx-42as500e-fhd-wifi-integrad_frontal_ad_l.png" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        TV LED 42 Panasonic, Full HD, Smart TV, Wi-Fi Integrado - TC42AS610B
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="http://www.novomundo.com.br/produto/22614/tv-led-42-panasonic-full-hd-smart-tv-wi-fi-integrado-tc42as610b" target="_blank"> 
+                        <img src="images/list/novomundo.png"></a>
+                    </th>
+                </tr> 
+
+
+                
+                <!-- mesinha de centro -->
+                <tr class="">
+                    <th>
+                        <img src="http://iacom.s8.com.br/produtos/01/00/item/116026/5/116026544_1GG.jpg" width="128" height="128">
+                    </th>
+                    <th>
+                        Você?
+                    </th>
+                    <th>
+                        Mesa de Centro Retangular Íris Belfort Oak
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="http://www.americanas.com.br/produto/116026544/mesa-de-centro-retangular-iris-belfort-oak-110x34-8x60cm-dj-moveis" target="_blank"> 
+                        <img src="https://logodownload.org/wp-content/uploads/2014/05/logo-Americanas.com_.png"> </a>
+                    </th>
+                </tr>
+                
+                <!-- GANHEI maquina de lavar -->
+                <tr class="ganhei">
+                    <th>
+                        <img src="http://iacom.s8.com.br/produtos/01/00/item/405/7/405779_1GG.png" width="128" height="128">
+                    </th>
+                    <th>
+                        Will
+                    </th>
+                    <th>
+                        Máquina de Lavar Brastemp, 11 kg 220V
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="http://www.novomundo.com.br/produto/10751/lavadora-de-roupas-maquina-de-lavar-brastemp-11-kg-branca-220v-bwl11a" target="_blank"> 
+                        <img src="images/list/novomundo.png"></a>
+                    </th>
+                </tr>
+
+                <!-- Ferro -->
+                <tr class="ganhei">
+                    <th>
+                        <img src="http://thumbs.buscape.com.br/ferro-de-passar-roupas/black-decker-x600/__300x300-PU2d517_1.jpg" width="128" height="128">
+                    </th>
+                    <th>
+                        Aleixo
+                    </th>
+                    <th>
+                        Black & Decker X600
+                    </th>
+                    <th><small>
+                        Deixe sua mensagem aqui
+                    </small></th>
+                    <th>
+                        <a href="http://www.buscape.com.br/black-decker-x600.html?pos=11#precos" target="_blank"> 
+                        <img src="images/list/buscape.png"></a>
+                    </th>
+                </tr>
+
+                <!--  --> 
+<!--                 <tr class="">
                     <th>
                         <img src="" width="128" height="128">
                     </th>
@@ -288,16 +591,16 @@
                         Você?
                     </th>
                     <th>
-                        Batedeira 500W Britania Turbo Prime 220V
+                        
                     </th>
                     <th><small>
-                        Batedeira 500W Britania Turbo Prime 220V
+                        Deixe sua mensagem aqui
                     </small></th>
                     <th>
-                        <a href="#" target="_blank"> 
-                        <img src="images/list/buscape.png"> 
-                        <br>R$000,00</a>
+                        <a href="" target="_blank"> 
+                        <img src="images/list/.png"></a>
                     </th>
+                </tr>  -->
 
 			</tbody>
 		</table>
@@ -317,14 +620,14 @@
                     <h3>Nossos contatos</h3>
                     <div class="contact-details contact-details-1">
                         <h4>Nayara</h4>
-                        <p><small>whatsapp </small> <small>OI -  62</small> 8422 3973  </p>
-                        <p><small>TIM -  62</small> 8222 8133  </p>
-                        <p>
+                        <small>whatsapp </small> <small>OI -  62</small> 8422 3973  </p>
+                        <small>TIM -  62</small> 8222 8133  </p>
+                        
                             <a href="https://pt-br.facebook.com/NayaaraV" target="_blank"><img src="images/svg/facebook.svg" width="24" height="24"></a>  &nbsp;&nbsp;
                             <!-- <a href="" target="_blank"><img src="images/svg/twitter.svg" width="24" height="24"></a>   &nbsp;&nbsp; -->
                             <a href="http://instagram.com/nayaarav" target="_blank"><img src="images/svg/instagram.svg" width="24" height="24"></a> &nbsp;&nbsp;
                         </p>
-                        <p>
+                        
                             <a href="mailto:nayarapradov@gmail.com?subject=RSVP">nayarapradov@gmail.com</a>
                         </p>
                     </div>
