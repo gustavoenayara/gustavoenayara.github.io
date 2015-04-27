@@ -6,12 +6,16 @@
 
 <!-- OG teste -->
 <meta property="og:image" 			content="foto.jpg" />
+<meta property="og:image:width"		content="400"/>
+<meta property="og:image:heigth"		content="300"/>
+<meta property="og:title"			content="Save the Date - Nayara&Gustavo"/>
  
-<meta name="description" content="Gustavo, Nayara, Nayara e Gustavo, Save the date, 27/06/2015,">
+<meta name="description" content="Poderíamos escrever aqui uma linda frase, poderíamos contar nossa história juntos, poderíamos escrever músicas, poesias e versos. Mas nada disso seria suficiente para descrever esse momento único que viveremos, porque sempre haveria mais uma linha, mais uma estrofe, mais um detalhe...">
 <meta name="author" content="Gustavo Alves">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!-- Icone da página -->
 <link rel="icon" type="image/png" href="images/ico/marriage.png">
 <!--   Google fonts  -->
@@ -95,7 +99,18 @@ $(document).ready(function() {
 
 </head>
 <!--[if lt IE 9]> <body  id="top" class="ie-fix"><![endif]-->	
-<!--[if (gt IE 8)|!(IE)]><!--> <body  id="top"><!--<![endif]-->
+<!--[if (gt IE 8)|!(IE)]><!--> 
+<body  id="top"><!--<![endif]-->
+
+	<!-- FACEBOOK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	
 	<!--- NAVIGATION STARTS -->
 	<div class="nav-container">
@@ -162,7 +177,7 @@ $(document).ready(function() {
 								<img src="images/reception.jpg" width="300" height="300" alt="Recepção">
 							</span>
 							<h3>Chá de Panela</h3>
-							<p>20:30H</p>
+							<p>20:00H</p>
 							<p>Rua Bárbara Heliodora, Bairro Capuava</p>
 							<a class="map" data-lat="-16.656497" data-lng="-49.326243" data-title="Chá de Panela">Mostrar no Google Maps</a>
 							<div class="pile my_map"><div id="map-reception"></div></div>		
@@ -191,7 +206,8 @@ $(document).ready(function() {
 					<h3>Sua presença é o suficiente.
 					<br>Maaas, se você estiver tomado de uma extrema generozidade,
 					<br>criamos algumas listinhas para sua comodidade.</h3>
-					<h3><a href="presentes.html">Veja nossa lista</a></h3>
+					<h3><a href="presentes.html">Veja nossa lista de móveis e eletrodomesticos</a></h3>
+					<h3><a href="cha-de-panela.html">Veja nossa lista de utensílios para cozinha</a></h3>
 
 				</div>
 			</section>
@@ -262,6 +278,7 @@ $(document).ready(function() {
 			<!--- RSVP STARTS -->
 			<section id="rsvp" class="contact">
 					<h2 class="title">Contatos</h2>
+					<div class="fb-like" data-href="http://gustavoenayara.com/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 				<div class="wrapper">
 
 					<h3>Nossos contatos</h3>
@@ -290,7 +307,6 @@ $(document).ready(function() {
 							<a href="mailto:gustavoalves.inf@gmail.com?subject=RSVP">gustavoalves.inf@gmail.com</a>
 						</p>
 					</div>
-						
 				</div>
 					
 			</section>
